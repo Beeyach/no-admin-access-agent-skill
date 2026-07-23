@@ -1,0 +1,23 @@
+name: Detection or alternative request
+description: Suggest a command pattern or user-space route
+title: "[Request]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Restricted-environment problem
+      description: Explain the real task and constraint without private organization details.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Official documentation or reproducible example
+

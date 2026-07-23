@@ -1,0 +1,32 @@
+name: Bug report
+description: Report incorrect detection or installation behavior
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows, macOS, Linux, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command or task
+      description: Remove secrets, usernames, company names, and internal paths.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+

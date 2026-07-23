@@ -1,0 +1,12 @@
+interface:
+  display_name: "No Admin Access"
+  short_description: "Keep coding agents inside user permissions"
+  default_prompt: "Use $no-admin-access to complete this task without administrator or sudo access."
+policy:
+  products:
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
+  allow_implicit_invocation: true
+
